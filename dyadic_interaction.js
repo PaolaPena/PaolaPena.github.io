@@ -25,7 +25,7 @@ over - we can potentially have multiple servers running on different ports. Usin
 port 9001 will connect you to the shared server that Kenny is running on
 jspsychlearning - so if another person is already in the waiting room you will be
 paired with them! If you want to use your own server, change the port number here
-and also near the end of dyadic_interaction_server.py - you can request a private 
+and also near the end of dyadic_interaction_server.py - you can request a private
 port number from Kenny if you want to try this.
 */
 var my_port_number = 9002;
@@ -437,17 +437,17 @@ of production effort at this third stage. Kanwal et al. had participants click a
 with a longer hold required for the longer label. In the interests of simplicity
 (there are other bits of complexity in this code!) I have implemented a slightly
 different way of increasing production effort - multiple clicks are required to
-send the label, one per label character. I am doing this using a loop, like we used 
-in the iterated learning experimnet to allow participants to click multiple times 
-to build a label, but here they just have to click a set number of times on a single button. 
-We look up which label the participant selected on subtrial 2 - in the same way as we did 
-back in word_learning.js - but then look at the length of that label, and require the 
+send the label, one per label character. I am doing this using a loop, like we used
+in the iterated learning experimnet to allow participants to click multiple times
+to build a label, but here they just have to click a set number of times on a single button.
+We look up which label the participant selected on subtrial 2 - in the same way as we did
+back in word_learning.js - but then look at the length of that label, and require the
 participant to produce that many clicks in the loop to finish the trial. We keep track of
-which label they selected, how many clicks are required, and how many they have given in 
-three variables, label_selected, n_clicks_required, and n_clicks_given, which allow us 
+which label they selected, how many clicks are required, and how many they have given in
+three variables, label_selected, n_clicks_required, and n_clicks_given, which allow us
 to control the behaviour of this loop.
 
-Then after this 3rd subtrial, we send a message to the server using a call-function trial, 
+Then after this 3rd subtrial, we send a message to the server using a call-function trial,
 letting it know (among other info) which label the participant selected - the server can then
 relay this on to the other participant.
 */
@@ -687,7 +687,7 @@ var instruction_screen_enter_waiting_room = {
 };
 
 var preload_trial = {
-  type: "preload",
+  type: "jspsych-preload",
   auto_preload: true,
 };
 

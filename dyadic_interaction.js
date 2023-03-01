@@ -28,7 +28,7 @@ paired with them! If you want to use your own server, change the port number her
 and also near the end of dyadic_interaction_server.py - you can request a private
 port number from Kenny if you want to try this.
 */
-var my_port_number = 9002;
+var my_port_number = 9001;
 
 /******************************************************************************/
 /*** Generate a random participant ID *****************************************/

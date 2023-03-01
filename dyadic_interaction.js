@@ -706,7 +706,7 @@ var full_timeline = [].concat(
   instruction_screen_observation,
   observation_trials,*/
   instruction_screen_enter_waiting_room,
-  start_interaction_loop*/
+  start_interaction_loop
 );
 
 /******************************************************************************/

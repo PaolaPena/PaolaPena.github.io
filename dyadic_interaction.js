@@ -700,13 +700,13 @@ Note that this timeline only takes us as far as the interaction loop, at which p
 the rest of the trials will be added dynamically.
 */
 var full_timeline = [].concat(
-  consent_screen,
+  /*consent_screen,
   preload_trial,
   write_headers,
   instruction_screen_observation,
-  observation_trials,
+  observation_trials,*/
   instruction_screen_enter_waiting_room,
-  start_interaction_loop
+  start_interaction_loop*/
 );
 
 /******************************************************************************/
